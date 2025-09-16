@@ -1,0 +1,7 @@
+#cart{
+     border: 2px solid tomato;
+     background-color: hsl(60, 23%, 83%);
+}
+#cart *{
+     color: blue;
+}
