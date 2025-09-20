@@ -1,4 +1,4 @@
-import SocialLink from "./socialLink"
+import SocialLink from "../socialLink"
 import "./cart.css"
 import Icon from "./assets/react.svg"
 const carts={

@@ -1,5 +1,6 @@
-import "./cart.css"
-import PropsChild from "./PropsChild"
+import "./cart/cart.css";
+import PropsChild from "./PropsChild";
+import Data from "../data.json";
 
 
 function PropsPage(){
@@ -28,6 +29,19 @@ function PropsPage(){
                     // round={65}
                     /> */}
                </div>
+          </div>
+
+          <h3>Loop form json data file</h3>
+
+          <div className="row g-3">
+               {
+                    Data.map((item)=>
+                        <div key={item.id} className="col-lg-4">
+                         {/* <PropsChild {...item} /> */}
+                         <PropsChild name={item.name} email={item.email} round={item.round} />
+                        </div>
+                    )
+               }
           </div>
      </div>
      )
