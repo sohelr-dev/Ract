@@ -1,4 +1,6 @@
-import {useState} from 'react'
+import {useEffect, useState} from 'react'
+import Header from './header';
+import Footer from './footer';
 
 
 //only export use korle object ar name ja ache tai diye import korte hobe
@@ -22,8 +24,15 @@ function UseState() {
 
      const [like, setLike] = useState(0);
      // useState build-in 
+
+     //use effect use for 
+     useEffect (()=>{
+          console.log("UseState is working");
+     },[like]);
+     
   return (
      <>
+     
           <div className="container text-center">
                <div>UseState</div>
                {/* for 7 line  */}
@@ -34,6 +43,7 @@ function UseState() {
 
                {like >0 && <button onClick={()=>setLike(like -1)}>👎</button>}
           </div>
+     
      </>
   )
 }

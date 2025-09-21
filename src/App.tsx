@@ -1,4 +1,5 @@
 // import Cart from "./cart"
+import { Outlet } from "react-router-dom"
 import Footer from "./components/footer"
 import Header from "./components/header"
 import Loop from "./components/Loop"
@@ -10,9 +11,11 @@ function App(){
   return (
    <>
    <Header/>
-   <UseState/>
-   <PropsPage/>
-   <Loop/>
+   {/* placeholder ar moto kaj kore  */}
+   <Outlet/>
+   {/* <UseState/> */}
+   {/* <PropsPage/> */}
+   {/* <Loop/> */}
    {/* <Cart/>
    <Event/> */}
    <Footer/>
